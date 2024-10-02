@@ -2,11 +2,13 @@
 let numero = prompt("Digite um número:");
 
 // Converte a entrada para número
-numero = parseInt(numero);
+numero = parseFloat(numero);
 
-// Verifica se o número é par ou ímpar
-if (numero % 2 === 0) {
-  alert("O número é par.");
+// Verifica se o número é positivo, negativo ou zero
+if (numero > 0) {
+  alert("O número é positivo.");
+} else if (numero < 0) {
+  alert("O número é negativo.");
 } else {
-  alert("O número é ímpar.");
+  alert("O número é zero.");
 }
